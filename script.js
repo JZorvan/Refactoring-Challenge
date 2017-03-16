@@ -1,4 +1,5 @@
 'use strict';
+
 let html = '';
 
 const randomHue = () => {
@@ -6,15 +7,15 @@ const randomHue = () => {
 }
 
 const colorString = () => {
-	let color = 'rgb(';
-	color += randomHue() + ',';
-	color += randomHue() + ',';
-	color += randomHue() + ')';
-	return color;
+  let color = 'rgb(';
+  color += randomHue() + ',';
+  color += randomHue() + ',';
+  color += randomHue() + ')';
+  return color;
 }
 
 const print = (message) => {
-	document.write(message);
+  document.write(message);
 }
 
 for (let i = 0; i < 100; i++) {
